@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="contact.css" rel="stylesheet">
+        <title>Brandon's Contact Page</title>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="../../CodeCademy/porfolio_index.html#about">About Me</a></li>
+                <li><a href="../../CodeCademy/porfolio_index.html#projects">Projects</a></li>
+                <li><a href="../../CodeCademy/porfolio_index.html#skills">Skills</a></li>
+                <li><a href="../../CodeCademy/porfolio_index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Contact</h1>
+        <p>Have an interesting project? I'd love to hear about it!</p>
+        <div class="social-media">
+            <a href="https://www.instagram.com/" target="_blank"><img class="media-image" src="../Portfolio Resources/Images/insta.png"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img class="media-image" src="../Portfolio Resources/Images/fb-logo.jpeg"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img class="media-image" src="../Portfolio Resources/Images/linkedin logo.png"></a>
+            <a href="https://twitter.com/" target="_blank"><img class="media-image" src="../Portfolio Resources/Images/twitter logo.jpeg"></a>
+        </div>
+        <div class="pic">
+            <button id="prev_pic">Prev. Picture <<</button>
+            <img id="pic" src="../../../../Desktop/DevProjects/images/farmer1.jpeg">
+            <img id="two" src="../../../../Desktop/DevProjects/images/farmer3.jpeg">
+
+            <button id="next_pic">Next Picture >></button>
+        </div>
+        <div class="bye">
+            <img src="../Portfolio Resources/Images/waving.jpeg">
+        </div>
+        
+        <footer>
+            <button id="button">See More</button>
+            <button id="restore">Hide</button>
+            <p id="hide">Brandon Releford</p>
+            <p id="show">bez@gmail.com</p>
+            <div id="survey">
+                <form action="./contact.html" method ="POST">
+                    <h1>Visitor Comments</h1>
+                    <label for="name">Name:</label>
+                    <input id="name" type="text" name="name">
+                    <br>
+                    <label for="commentbox">Leave a Comment:</label>
+                    <input id="commentbox" type="text" name="first-field">
+                    <br>
+                    <label for="rate">How much do you like my site?</label>
+                    <br>
+                    <span>0</span>
+                    <input id="rate" type="range" name="rate" min="0" max="100" step="0.5">
+                    <span>100</span>
+                    <br>
+                    <label for="feature">Which of the Site's features is your Favorite?</label>
+                <input type="text" list="features" id="feature" name="feature">
+                
+                <datalist id="features">
+                    <option value="HTML"></option>
+                    <option value="CSS Animations"></option>
+                    <option value="CSS Transitions"></option>
+                    <option value="CSS Tranform"></option>
+                    <option value="JavaScript"></option>
+                    <option value="Other"></option>  
+                </datalist>
+                <br>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+            
+        </footer>
+        <script src="../Portfolio Resources/contact.js"></script>
+    </body>
+
+   
